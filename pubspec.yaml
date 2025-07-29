@@ -1,0 +1,53 @@
+name: i_m_bored
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  get: ^4.7.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/fonts/
+  #    - assets/icons/
+  #    - assets/sounds/
+  fonts:
+    - family: AbrilFatface
+      fonts:
+        - asset: assets/fonts/abrilfatface/AbrilFatface_Regular.ttf
+    - family: BitcountPropSingle
+      fonts:
+        - asset: assets/fonts/bit_count/BitcountPropSingle_VariableFont.ttf
+    - family: PlaywriteAUQLD
+      fonts:
+        - asset: assets/fonts/play_write/PlaywriteAUQLD_VariableFont.ttf
+    - family: ShantellSans
+      fonts:
+        - asset: assets/fonts/shantell_sans/ShantellSans-Regular.ttf
+    - family: WinkyRough
+      fonts:
+        - asset: assets/fonts/winky_rough/WinkyRough_VariableFont.ttf
+        - asset: assets/fonts/winky_rough/WinkyRough_Italic_VariableFont.ttf
+          style: italic
+    - family: YanoneKaffeesatz
+      fonts:
+        - asset:
+            assets/fonts/yanone_kaffeesatz/YanoneKaffeesatz.ttf
+    - family: Fredoka
+      fonts:
+        - asset:
+            assets/fonts/fredoka/Fredoka.ttf
