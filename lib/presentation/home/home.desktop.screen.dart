@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:i_m_bored/constants/images.string.dart';
-import 'package:i_m_bored/presentation/anime/anime.screen.dart';
 import 'package:i_m_bored/presentation/home/controllers/home.controller.dart';
 import 'package:i_m_bored/presentation/home/views/header_view.dart';
+import 'package:i_m_bored/presentation/screens.dart';
 
 import '../../widgets/parallax.effect.container.dart';
 
@@ -20,7 +20,7 @@ class HomeDesktopScreen extends GetView<HomeController> {
             child: Column(
               children: [
                 SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.8,
+                  height: MediaQuery.of(context).size.height * 0.4,
                   child: ParallaxEffect(
                     backgroundImage: erenYeagerImage,
                     controller: controller.scrollController,
@@ -33,13 +33,35 @@ class HomeDesktopScreen extends GetView<HomeController> {
                   backgroundImage: demonSlayerImage,
                   parallaxFactor: 0.4,
                   controller: controller.scrollController,
-                  child: AnimeScreen(),
+                  child: CustomContainerContent(title: 'Header'),
                 ),
                 ParallaxEffect(
+                  key: controller.mainController.animeKey,
                   backgroundImage: demonSlayerImage,
                   parallaxFactor: 0.4,
                   controller: controller.scrollController,
-                  child: CustomContainerContent(title: 'Header'),
+                  child: AnimeScreen(),
+                ),
+                ParallaxEffect(
+                  key: controller.mainController.activitiesKey,
+                  backgroundImage: demonSlayerImage,
+                  parallaxFactor: 0.4,
+                  controller: controller.scrollController,
+                  child: ActivitiesScreen(),
+                ),
+                ParallaxEffect(
+                  key: controller.mainController.websitesKey,
+                  backgroundImage: demonSlayerImage,
+                  parallaxFactor: 0.4,
+                  controller: controller.scrollController,
+                  child: WebsitesScreen(),
+                ),
+                ParallaxEffect(
+                  key: controller.mainController.factsKey,
+                  backgroundImage: demonSlayerImage,
+                  parallaxFactor: 0.4,
+                  controller: controller.scrollController,
+                  child: FactsScreen(),
                 ),
               ],
             ),

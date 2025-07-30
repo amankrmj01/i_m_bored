@@ -14,20 +14,19 @@ class HeaderView extends GetView<HomeController> {
       color: Colors.black.withAlpha((255 * 0.5).toInt()),
       child: Container(
         margin: const EdgeInsets.all(24),
+        padding: EdgeInsets.all(24),
         decoration: BoxDecoration(
-          color: Colors.blue.withAlpha((255 * 0.5).toInt()),
+          color: Colors.yellow.withAlpha((255 * 0.5).toInt()),
           borderRadius: BorderRadius.circular(20),
           border: Border.all(color: Colors.white38),
         ),
-        child: Center(
-          child: TextWithBorder(
-            text: 'i\'m bored',
-            fontSize: 84,
-            fontFamily: 'Fredoka',
-            borderColor: Colors.black,
-            strokeWidth: 10,
-            fillColor: Colors.white,
-          ),
+        child: TextWithBorder(
+          text: 'i\'m bored',
+          fontSize: 84,
+          fontFamily: 'Fredoka',
+          borderColor: Colors.black,
+          strokeWidth: 10,
+          fillColor: Colors.white,
         ),
       ),
     );

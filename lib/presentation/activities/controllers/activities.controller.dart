@@ -1,23 +1,7 @@
 import 'package:get/get.dart';
 
+import '../../../infrastructure/navigation/bindings/controllers/main.controller.dart';
+
 class ActivitiesController extends GetxController {
-  //TODO: Implement ActivitiesController
-
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
-  }
-
-  @override
-  void onReady() {
-    super.onReady();
-  }
-
-  @override
-  void onClose() {
-    super.onClose();
-  }
-
-  void increment() => count.value++;
+  final MainController mainController = Get.find<MainController>();
 }
