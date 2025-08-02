@@ -1,6 +1,7 @@
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&text=Hello!&height=100&section=header&animation=fadeIn" alt=""/>
-</p>
+</p>  
+
 # i_m_bored
 
 Welcome to **i_m_bored**! 🎉
