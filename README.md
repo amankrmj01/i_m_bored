@@ -1,6 +1,5 @@
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&text=Hello!&height=100&section=header&animation=fadeIn" alt=""/>
-  <img src="https://capsule-render.vercel.app/api?type=transparent&text=Welcome%20to%20my%20profile!👋&animation=fadeIn&fontColor=ffffff&fontSize=30&height=50" alt=""/>
 </p>
 # i_m_bored
 
