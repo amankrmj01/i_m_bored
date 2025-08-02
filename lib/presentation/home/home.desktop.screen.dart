@@ -7,6 +7,9 @@ import 'package:i_m_bored/presentation/screens.dart';
 
 import '../../widgets/parallax.effect.container.dart';
 
+final dx = 0.0.obs;
+final dy = 0.0.obs;
+
 class HomeDesktopScreen extends GetView<HomeController> {
   const HomeDesktopScreen({super.key});
 
@@ -30,6 +33,13 @@ class HomeDesktopScreen extends GetView<HomeController> {
                 ),
 
                 ParallaxEffect(
+                  key: controller.mainController.activitiesKey,
+                  backgroundImage: demonSlayerImage,
+                  parallaxFactor: 0.4,
+                  controller: controller.scrollController,
+                  child: ActivitiesScreen(),
+                ),
+                ParallaxEffect(
                   backgroundImage: demonSlayerImage,
                   parallaxFactor: 0.4,
                   controller: controller.scrollController,
@@ -41,13 +51,6 @@ class HomeDesktopScreen extends GetView<HomeController> {
                   parallaxFactor: 0.4,
                   controller: controller.scrollController,
                   child: AnimeScreen(),
-                ),
-                ParallaxEffect(
-                  key: controller.mainController.activitiesKey,
-                  backgroundImage: demonSlayerImage,
-                  parallaxFactor: 0.4,
-                  controller: controller.scrollController,
-                  child: ActivitiesScreen(),
                 ),
                 ParallaxEffect(
                   key: controller.mainController.websitesKey,
@@ -66,6 +69,7 @@ class HomeDesktopScreen extends GetView<HomeController> {
               ],
             ),
           ),
+          // PointerPassthroughCircle(dx: dx, dy: dy),
         ],
       ),
     );
@@ -89,3 +93,47 @@ class CustomContainerContent extends StatelessWidget {
     );
   }
 }
+
+// Extracted widget for pointer-following circle that is pointer and scroll passthrough, but still tracks mouse location
+// class PointerPassthroughCircle extends StatelessWidget {
+//   final RxDouble dx;
+//   final RxDouble dy;
+//   final double size;
+//
+//   const PointerPassthroughCircle({
+//     super.key,
+//     required this.dx,
+//     required this.dy,
+//     this.size = 100,
+//   });
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Positioned.fill(
+//       child: MouseRegion(
+//         opaque: false,
+//         onHover: (PointerHoverEvent event) {
+//           dx.value = event.position.dx;
+//           dy.value = event.position.dy;
+//         },
+//         child: IgnorePointer(
+//           ignoring: true,
+//           child: Obx(
+//             () => Positioned(
+//               left: dx.value - size / 2,
+//               top: dy.value - size / 2,
+//               child: Container(
+//                 width: size,
+//                 height: size,
+//                 decoration: BoxDecoration(
+//                   color: Colors.red.withAlpha(150),
+//                   shape: BoxShape.circle,
+//                 ),
+//               ),
+//             ),
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }

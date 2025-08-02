@@ -41,7 +41,6 @@ class HomeController extends GetxController {
   void _snapToSection() {
     final double screenHeight = Get.context?.size?.height ?? 0;
     if (screenHeight == 0) return;
-    final double offset = scrollController.offset;
     final sectionKeys = [
       mainController.animeKey,
       mainController.activitiesKey,
@@ -59,7 +58,6 @@ class HomeController extends GetxController {
           final pos = box.localToGlobal(Offset.zero);
           final top = pos.dy;
           final bottom = top + box.size.height;
-          // Section is fully visible if top >= 0 and bottom <= screenHeight
           if (top >= 0 && bottom <= screenHeight) {
             currentSection = i;
             break;

@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:i_m_bored/constants/random.activities.dart';
+import 'package:i_m_bored/presentation/activities/widget/character.falling.effect.dart';
+import 'package:i_m_bored/presentation/activities/widget/wind.falling.effect.dart';
+import 'package:i_m_bored/utils/k.showGeneralDialog.dart';
 
 import 'controllers/activities.controller.dart';
 
@@ -46,7 +50,14 @@ class ActivitiesScreen extends GetView<ActivitiesController> {
             const SizedBox(height: 20),
             ElevatedButton(
               // onPressed: controller.getRandomActivity,
-              onPressed: () {},
+              onPressed: () {
+                showBlurredGeneralDialog(
+                  context: context,
+                  builder: (context) {
+                    return CharacterFallingEffect();
+                  },
+                );
+              },
               child: const Text('Get Random Activity'),
             ),
           ],
