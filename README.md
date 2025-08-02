@@ -1,16 +1,33 @@
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&text=Hello!&height=100&section=header&animation=fadeIn" alt=""/>
+  <img src="https://capsule-render.vercel.app/api?type=transparent&text=Welcome%20to%20my%20profile!👋&animation=fadeIn&fontColor=ffffff&fontSize=30&height=50" alt=""/>
+</p>
 # i_m_bored
 
-A new Flutter project.
+Welcome to **i_m_bored**! 🎉
 
-## Getting Started
+A fun website made using [Flutter](https://flutter.dev/).
 
-This project is a starting point for a Flutter application.
+## What is this?
 
-A few resources to get you started if this is your first Flutter project:
+Are you bored? So are we! This site is designed to help you kill your boredom with fun
+features—without f*king your mind from endless scrolling.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Fun activities
+- Anime facts
+- Cool websites
+- And more coming soon!
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests to add new features or
+improve existing ones.
+
+---
+
+*Stay tuned for more updates!*
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" alt=""/>
+</p>
